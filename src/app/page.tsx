@@ -89,11 +89,11 @@ export default function PromptPayGenerator() {
 		setMobileNo(phone);
 	}, []);
 
-	useEffect(() => {
-		if (isLoaded && promptPayId) {
-			generatePromptPay();
-		}
-	}, [isLoaded, type, promptPayId, amount]);
+  useEffect(() => {
+    if (isLoaded && type && promptPayId && amount) {
+      generatePromptPay();
+    }
+  }, [isLoaded, type, promptPayId, amount]);
 
 	if (!isLoaded) {
 		return (
