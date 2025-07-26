@@ -89,12 +89,6 @@ export default function PromptPayGenerator() {
 		setMobileNo(phone);
 	}, []);
 
-  useEffect(() => {
-    if (isLoaded && type && mobileNo && promptPayId && amount) {
-      generatePromptPay();
-    }
-  }, [isLoaded, type, mobileNo, promptPayId, amount]);
-
 	if (!isLoaded) {
 		return (
 			<div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center">
@@ -169,12 +163,12 @@ export default function PromptPayGenerator() {
 									/>
 								</div>
 							)}
-							{/* <button
+							<button
                 onClick={generatePromptPay}
                 className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-xl font-medium transition-all transform hover:scale-105 active:scale-95"
               >
                 Generate PromptPay QR
-              </button> */}
+              </button>
 						</div>
 					</div>
 
