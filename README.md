@@ -69,7 +69,7 @@ Other hosting options:
 
 ## 💎 Demo
 
-https://...
+https://promptpay-promptparse.vercel.app
 
 ## 🛠️ Technologies Used
 
