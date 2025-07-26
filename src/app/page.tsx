@@ -90,10 +90,10 @@ export default function PromptPayGenerator() {
 	}, []);
 
   useEffect(() => {
-    if (isLoaded && type && promptPayId && amount) {
+    if (isLoaded && type && mobileNo && promptPayId && amount) {
       generatePromptPay();
     }
-  }, [isLoaded, type, promptPayId, amount]);
+  }, [isLoaded, type, mobileNo, promptPayId, amount]);
 
 	if (!isLoaded) {
 		return (
