@@ -1,4 +1,4 @@
-## promptpay-promptparse - Next.js 15 (TypeScript) & Tailwind CSS 4
+## promptpay-promptparse - Next.js 16 (TypeScript) & Tailwind CSS 4
 
 Promptpay QR Code Scanner จาก promptparse
 
